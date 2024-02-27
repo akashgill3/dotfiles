@@ -8,6 +8,7 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export TERM='xterm-256color'
 export VISUAL='nvim'
 export EDITOR='nvim'
