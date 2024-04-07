@@ -19,7 +19,8 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
-
+# Shortcuts
+alias cdj="cd ~/eclipse-workspace/Java_Akashdeep"
 alias cl='clear'
 # Git
 alias gc="git commit -m"
@@ -33,7 +34,7 @@ alias gco="git checkout"
 alias gb='git branch'
 alias gba='git branch -a'
 alias gadd='git add'
-alias ga='git add -p'
+alias ga='git add .'
 alias gcoall='git checkout -- .'
 alias gr='git remote'
 alias gre='git reset'
