@@ -8,4 +8,17 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
+-- Setup lazy.nvim
+require("lazy").setup({
+	spec = {
+    'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+    { import = "config.plugins" },
+	},
+	change_detection = {
+		enabled = false,
+		notify = false,
+  },
+  { ui = { icons = vim.g.have_nerd_font and {} } },
+})
+
 -- vim: ts=2 sts=2 sw=2 et

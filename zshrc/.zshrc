@@ -4,6 +4,7 @@ export TERM='xterm-256color'
 export VISUAL='nvim'
 export EDITOR='nvim'
 alias vim='NVIM_APPNAME=kickstart-nvim nvim'
+alias nvim='NVIM_APPNAME=kickstart-nvim nvim'
 # Dirs
 alias ..="cd .."
 alias ...="cd ../.."
@@ -34,11 +35,4 @@ alias gre='git reset'
 export PATH="/usr/local/opt/openjdk@21/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
-
-# BEGIN opam configuration
-# This is useful if you're using opam as it adds:
-#   - the correct directories to the PATH
-#   - auto-completion for the opam binary
-# This section can be safely removed at any time if needed.
 [[ ! -r '/Users/akashgill/.opam/opam-init/init.zsh' ]] || source '/Users/akashgill/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
-# END opam configuration
