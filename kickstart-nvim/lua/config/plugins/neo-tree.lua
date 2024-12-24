@@ -22,7 +22,7 @@ return {
           }
         },
         visible = true,
-        show_hidden_count = true,
+        show_hidden_count = false,
         hide_dotfiles = false,
         hide_gitignored = false,
         hide_by_name = {

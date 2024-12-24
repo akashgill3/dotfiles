@@ -34,25 +34,17 @@ vim.api.nvim_create_autocmd("TermOpen", {
 })
 
 local job_id = 0
-vim.keymap.set("n", "<space>to", function()
+vim.keymap.set("n", "<space>j", function()
   vim.cmd.vnew()
   vim.cmd.term()
   vim.cmd.wincmd("J")
   vim.api.nvim_win_set_height(0, 5)
 
+  -- this gets the id of the terminal buffer
   job_id = vim.bo.channel
 end)
 
-local current_command = ""
-vim.keymap.set("n", "<space>te", function()
-  current_command = vim.fn.input("Command: ")
-end)
-
 vim.keymap.set("n", "<space>tr", function()
-  if current_command == "" then
-    current_command = vim.fn.input("Command: ")
-  end
-
-  vim.fn.chansend(job_id, { current_command .. "\r\n" })
+  vim.fn.chansend(job_id, { "ls -alhg" .. "\r\n" })
 end)
 -- vim: ts=2 sts=2 sw=2 et
