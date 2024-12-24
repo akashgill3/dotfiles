@@ -1,18 +1,9 @@
-# Generated for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
-
-# added by Webi for pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-
-eval "$(pyenv init -)"
-
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export TERM='xterm-256color'
 export VISUAL='nvim'
 export EDITOR='nvim'
-alias vim='nvim'
+alias vim='NVIM_APPNAME=kickstart-nvim nvim'
 # Dirs
 alias ..="cd .."
 alias ...="cd ../.."
@@ -20,7 +11,8 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 # Shortcuts
-alias cdj="cd ~/eclipse-workspace/Java_Akashdeep"
+alias cdg="cd ~/Workspace/github.com/Akashgill3"
+alias log="nvim ~/Workspace/github.com/Akashgill3/daily_log.md"
 alias cl='clear'
 # Git
 alias gc="git commit -m"
@@ -38,3 +30,15 @@ alias ga='git add .'
 alias gcoall='git checkout -- .'
 alias gr='git remote'
 alias gre='git reset'
+
+export PATH="/usr/local/opt/openjdk@21/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/Users/akashgill/.opam/opam-init/init.zsh' ]] || source '/Users/akashgill/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
