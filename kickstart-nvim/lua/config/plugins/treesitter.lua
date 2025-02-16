@@ -7,6 +7,8 @@ return {
     opts = {
       ensure_installed = {
         'bash',
+        'html',
+        'javascript',
         'c',
         'diff',
         'html',

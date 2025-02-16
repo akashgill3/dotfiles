@@ -1,8 +1,10 @@
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<leader>h', ':split<CR>')
 vim.keymap.set('n', '<leader>v', ':vs<CR>')
-vim.keymap.set('n', '<leader>q', ':q<CR>')
-vim.keymap.set('n', '<leader>w', ':wq<CR>')
+vim.keymap.set('n', '<leader>q', ':wq<CR>')
+vim.keymap.set('n', '<leader>w', ':w<CR>')
 
 
 vim.keymap.set('n', '<leader>f', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
@@ -33,18 +35,18 @@ vim.api.nvim_create_autocmd("TermOpen", {
   end,
 })
 
-local job_id = 0
-vim.keymap.set("n", "<space>j", function()
-  vim.cmd.vnew()
-  vim.cmd.term()
-  vim.cmd.wincmd("J")
-  vim.api.nvim_win_set_height(0, 5)
+-- local job_id = 0
+-- vim.keymap.set("n", "<space>j", function()
+--   vim.cmd.vnew()
+--   vim.cmd.term()
+--   vim.cmd.wincmd("J")
+--   vim.api.nvim_win_set_height(0, 5)
+--
+--   -- this gets the id of the terminal buffer
+--   job_id = vim.bo.channel
+-- end)
 
-  -- this gets the id of the terminal buffer
-  job_id = vim.bo.channel
-end)
-
-vim.keymap.set("n", "<space>tr", function()
-  vim.fn.chansend(job_id, { "ls -alhg" .. "\r\n" })
-end)
+-- vim.keymap.set("n", "<space>tr", function()
+--   vim.fn.chansend(job_id, { "ls -alhg" .. "\r\n" })
+-- end)
 -- vim: ts=2 sts=2 sw=2 et

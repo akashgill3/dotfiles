@@ -18,7 +18,7 @@ return {
       filtered_items = {
         window = {
           mapping = {
-          ['<leader>e'] = 'close_window',
+          ['e'] = 'close_window',
           }
         },
         visible = true,

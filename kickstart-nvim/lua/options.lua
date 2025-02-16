@@ -4,6 +4,12 @@ vim.opt.relativenumber = true
 vim.opt.mouse = 'a'
 vim.opt.showmode = false
 vim.opt.wrap = false
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.colorcolumn = "80"
+vim.opt.expandtab = true
+vim.opt.termguicolors = true
 
 vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'

@@ -36,3 +36,11 @@ export PATH="/usr/local/opt/openjdk@21/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 [[ ! -r '/Users/akashgill/.opam/opam-init/init.zsh' ]] || source '/Users/akashgill/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+export PATH=$PATH:$HOME/go/bin
+
+# bun completions
+[ -s "/Users/akashgill/.bun/_bun" ] && source "/Users/akashgill/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
