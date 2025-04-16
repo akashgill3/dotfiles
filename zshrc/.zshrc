@@ -1,8 +1,6 @@
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export TERM='xterm-256color'
-export VISUAL='nvim'
-export EDITOR='nvim'
 alias vim='NVIM_APPNAME=kickstart-nvim nvim'
 alias nvim='NVIM_APPNAME=kickstart-nvim nvim'
 # Dirs
@@ -11,6 +9,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
+alias ll='ls -lahg'
 # Shortcuts
 alias cdg="cd ~/Workspace/github.com/Akashgill3"
 alias log="nvim ~/Workspace/github.com/Akashgill3/daily_log.md"
@@ -44,3 +43,7 @@ export PATH=$PATH:$HOME/go/bin
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="$HOME/Odin:$PATH"
+export PATH="$HOME/.local/share/kickstart-nvim/mason/bin:$PATH"
+export ODIN_ROOT="$HOME/Odin"
