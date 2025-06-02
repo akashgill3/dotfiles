@@ -37,6 +37,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 [[ ! -r '/Users/akashgill/.opam/opam-init/init.zsh' ]] || source '/Users/akashgill/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 export PATH=$PATH:$HOME/go/bin
 
+fpath+=~/.zfunc
 # bun completions
 [ -s "/Users/akashgill/.bun/_bun" ] && source "/Users/akashgill/.bun/_bun"
 
