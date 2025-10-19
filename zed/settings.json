@@ -10,7 +10,7 @@
   "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4-latest"
+      "model": "claude-sonnet-4"
     },
     "model_parameters": [],
     "default_profile": "minimal",
@@ -49,9 +49,15 @@
   },
   "vim": {
     "use_smartcase_find": true,
-    "use_system_clipboard": "always"
+    "use_system_clipboard": "never"
   },
   "wrap_guides": [80],
   "show_wrap_guides": true,
-  "format_on_save": "on"
+  "format_on_save": "on",
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": false
+    }
+  }
 }

@@ -1,8 +1,8 @@
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export TERM='xterm-256color'
-alias vim='NVIM_APPNAME=kickstart-nvim nvim'
-alias nvim='NVIM_APPNAME=kickstart-nvim nvim'
+alias vim='NVIM_APPNAME=nvim nvim'
+alias nvim='NVIM_APPNAME=nvim nvim'
 # Dirs
 alias ..="cd .."
 alias ...="cd ../.."
@@ -11,8 +11,8 @@ alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 alias ll='ls -lahg'
 # Shortcuts
-alias cdg="cd ~/Workspace/github.com/Akashgill3"
-alias log="nvim ~/Workspace/github.com/Akashgill3/daily_log.md"
+alias cdg="cd ~/Workspace/github.com/akashgill3"
+alias log="nvim ~/Workspace/github.com/akashgill3/daily_log.md"
 alias cl='clear'
 # Git
 alias gc="git commit -m"
@@ -48,3 +48,8 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="$HOME/Odin:$PATH"
 export PATH="$HOME/.local/share/kickstart-nvim/mason/bin:$PATH"
 export ODIN_ROOT="$HOME/Odin"
+# zig nightly
+export PATH="$HOME/zig/zig-x86_64-macos-0.16.0-dev.747+493ad58ff:$PATH"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
