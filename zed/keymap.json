@@ -48,6 +48,7 @@
       "space tab": "tab_switcher::Toggle",
       "space a": "workspace::ToggleRightDock",
       "space e": "workspace::ToggleLeftDock",
+      "space c n": "workspace::ClearAllNotifications",
 
       // Error navigation
       "] e": "editor::GoToDiagnostic",
@@ -68,6 +69,36 @@
       "g A": "editor::FindAllReferences",
       "g f": "project_symbols::Toggle",
       "space p e": "diagnostics::Deploy" // Zed specific
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-cmd-b": null
+    }
+  },
+  {
+    "context": "(Editor && mode == full)",
+    "bindings": {
+      "alt-cmd-l": null
+    }
+  },
+  {
+    "context": "BufferSearchBar",
+    "bindings": {
+      "alt-cmd-l": null
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-cmd-l": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-cmd-l": "editor::Format"
     }
   }
 ]

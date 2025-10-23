@@ -7,63 +7,6 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "preferred_line_length": 100,
-  "soft_wrap": "preferred_line_length",
-  "bottom_dock_layout": "contained",
-  "collaboration_panel": {
-    "button": false
-  },
-  "outline_panel": {
-    "button": false,
-    "git_status": true
-  },
-  "git_panel": {
-    "button": false
-  },
-  "disable_ai": true,
-  "use_system_window_tabs": false,
-  "inlay_hints": {
-    "show_background": false
-  },
-  "completions": {
-    "lsp": true
-  },
-  "show_completion_documentation": true,
-  "show_completions_on_input": false,
-  "tabs": {
-    "file_icons": true,
-    "git_status": false
-  },
-  "title_bar": {
-    "show_menus": false,
-    "show_user_picture": true,
-    "show_sign_in": true,
-    "show_onboarding_banner": true,
-    "show_project_items": true,
-    "show_branch_icon": false
-  },
-  "debugger": {
-    "button": false
-  },
-  "search": {
-    "button": false
-  },
-  "diagnostics": {
-    "button": false
-  },
-  "terminal": {
-    "button": false
-  },
-  "status_bar": {
-    "active_language_button": true,
-    "cursor_position_button": true
-  },
-  "project_panel": {
-    "starts_open": false,
-    "file_icons": true,
-    "button": false
-  },
-  "use_smartcase_search": true,
   "tab_size": 2,
   "agent": {
     "default_model": {
@@ -71,7 +14,8 @@
       "model": "claude-sonnet-4"
     },
     "model_parameters": [],
-    "default_profile": "minimal"
+    "default_profile": "minimal",
+    "version": "2"
   },
   "show_edit_predictions": false,
   "toolbar": {
@@ -87,9 +31,7 @@
     "metrics": false
   },
   "tab_bar": {
-    "show": true,
-    "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": false
+    "show": true
   },
   "preview_tabs": { "enabled": false },
   "ui_font_size": 16,
@@ -110,6 +52,8 @@
     "use_smartcase_find": true,
     "use_system_clipboard": "never"
   },
+  "wrap_guides": [80],
+  "show_wrap_guides": true,
   "format_on_save": "on",
   "git": {
     "git_gutter": "tracked_files",
