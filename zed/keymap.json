@@ -100,5 +100,17 @@
     "bindings": {
       "alt-cmd-l": "editor::Format"
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-k cmd-p": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-cmd-f": null
+    }
   }
 ]

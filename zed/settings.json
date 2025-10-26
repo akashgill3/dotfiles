@@ -7,8 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "preferred_line_length": 100,
-  "soft_wrap": "preferred_line_length",
+  "soft_wrap": "none",
   "bottom_dock_layout": "contained",
   "collaboration_panel": {
     "button": false
@@ -32,7 +31,7 @@
   "show_completions_on_input": false,
   "tabs": {
     "file_icons": true,
-    "git_status": false
+    "git_status": true
   },
   "title_bar": {
     "show_menus": false,
@@ -99,7 +98,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Macchiato"
+    "dark": "Catppuccin Macchiato (Blur) [Light]"
   },
   "vim_mode": true,
   "relative_line_numbers": true,
@@ -110,8 +109,11 @@
     "use_smartcase_find": true,
     "use_system_clipboard": "never"
   },
+  "wrap_guides": [100],
   "format_on_save": "on",
   "git": {
+    "hunk_style": "staged_hollow",
+    "gutter_debounce": 0,
     "git_gutter": "tracked_files",
     "inline_blame": {
       "enabled": false

@@ -50,6 +50,7 @@ export PATH="$HOME/.local/share/kickstart-nvim/mason/bin:$PATH"
 export ODIN_ROOT="$HOME/Odin"
 # zig nightly
 export PATH="$HOME/zig/zig-x86_64-macos-0.16.0-dev.747+493ad58ff:$PATH"
+alias zigLTS='~/zig/zig-x86_64-macos-0.15.2/zig'
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
