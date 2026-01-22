@@ -1,8 +1,7 @@
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export TERM='xterm-256color'
-alias vim='NVIM_APPNAME=nvim nvim'
-alias nvim='NVIM_APPNAME=nvim nvim'
+alias vim='nvim'
 # Dirs
 alias ..="cd .."
 alias ...="cd ../.."
@@ -45,6 +44,8 @@ fpath+=~/.zfunc
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
 export PATH="$HOME/Odin:$PATH"
 export PATH="$HOME/.local/share/kickstart-nvim/mason/bin:$PATH"
 export ODIN_ROOT="$HOME/Odin"

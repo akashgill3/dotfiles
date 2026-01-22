@@ -1,0 +1,177 @@
+{
+  // general
+  "terminal.integrated.fontSize": 14,
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, 'Hack Nerd Font'",
+  "editor.suggest.insertMode": "replace",
+  "editor.linkedEditing": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "launch": {},
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "update.showReleaseNotes": false,
+  "zenMode.hideLineNumbers": false,
+  "editor.lineNumbers": "relative",
+
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
+    },
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
+    },
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": [":w!"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": [":q!"]
+    },
+    {
+      "before": ["leader", "x"],
+      "commands": [":x!"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["leader", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "f", "w"],
+      "commands": ["workbench.action.findInFiles"],
+      "silent": true
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["<Esc>"],
+      "commands": [":nohl"],
+      "silent": true
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ocaml]": {
+    "editor.tabSize": 2,
+    "editor.rulers": [ 80 ],
+    "editor.formatOnSave": true
+  },
+   "[ocaml.interface]": {
+    "editor.tabSize": 2,
+    "editor.rulers": [ 80 ],
+    "editor.formatOnSave": true
+  },
+  // Better defaults
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.lightbulb.enabled": "off",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on", // most asked
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.wordWrap": "on",
+  "editor.wrappingStrategy": "advanced",
+  "editor.tabSize": 2,
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Improved search
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**debug": true,
+    "**/package-lock.json": true,
+    "**/.next": true,
+    "**/data": true
+  },
+  "workbench.activityBar.location": "top",
+  "editor.fontLigatures": true,
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "editor.cursorSurroundingLines": 10,
+  "window.zoomLevel": 0.5,
+  "redhat.telemetry.enabled": true,
+  "extensions.ignoreRecommendations": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "chat.commandCenter.enabled": false
+}
